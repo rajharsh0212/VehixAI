@@ -32,7 +32,6 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import EmiCalculator from "./emi-calculator";
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 export function CarDetails({ car, testDriveInfo }) {
   const router = useRouter();
@@ -449,10 +448,6 @@ export function CarDetails({ car, testDriveInfo }) {
       <div className="mt-8 border-t pt-6">
         <h3 className="text-xl font-bold mb-4">Dealership Information</h3>
         <div className="flex items-center gap-4">
-          <Avatar>
-            <AvatarImage src="/placeholder.svg?height=40&width=40" />
-            <AvatarFallback>DM</AvatarFallback>
-          </Avatar>
           <div>
             <h4 className="font-medium">VehixAI Motors</h4>
             <p className="text-gray-500 text-sm">Authorized Dealer</p>
